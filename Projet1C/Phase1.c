@@ -1,5 +1,7 @@
-//Phase 1 – Addition de deux nombres (niveau débutant)
+
 #include<stdio.h>
+
+//Phase 1 – Addition de deux nombres (niveau débutant)
 
 /*
 int main()
@@ -17,7 +19,7 @@ int main()
 }*/
 
 //Phase 2 – Quatre opérations (niveau intermédiaire)
-int main()
+/*int main()
 {
     int menu; 
     int a;
@@ -30,26 +32,6 @@ int main()
     printf("le menu 2 est pour : la soustraction\n");
     printf("le menu 3 est pour : la multiplication\n");
     printf("le menu 4 est pour : la division\n");
-
-    // choix et affichage du menu choisit
-    printf("\nVeuillez choisir votre menu: ");
-    scanf("%d", &menu);
-
-
-    // Saisie des nombre entiers
-    printf("\n Veuillez entrer deux entiers :\n"); //Saisie de a et b
-    scanf("%d %d", &a, &b); //Lescture de a et b
-
-    
-    // Operation selon le menu choisit par l'utilisateur
-
-    if (menu == 1)
-    {
-        resultat = a + b; //Calcul de la sommes de a+b
-        printf("Le resulat est : %d\n", resultat); //affichage de la somme de a+b
-    }
-    else if (menu == 2)
-    {
         resultat = a - b;
         printf("Le soustraction des deux est : %d\n", resultat);
     }
@@ -70,4 +52,34 @@ int main()
     }
 
     return 0;
+}*/
+
+//Phase 3 – Calculs en boucle (niveau moyen)
+int main()
+{
+    int menu;
+    int a;
+    int b;
+    int resultat;
+    int saisie; // pour quitter en choisissant 0
+
+    do {
+        printf("Proposition de menu :\n");
+
+        printf("\n 0 pour quitter\n");
+        printf("le menu 1 est pour : l'addition\n");
+        printf("le menu 2 est pour : la soustraction\n");
+        printf("le menu 3 est pour : la multiplication\n");
+        printf("le menu 4 est pour : la division\n");
+
+    
+        printf("\nVeuillez choisir votre menu: ");
+        scanf("%d", &menu);
+
+
+        printf("\n Veuillez entrer deux entiers :\n"); //Saisie de a et b
+        scanf("%d %d", &a, &b); //Lescture de a et b
+
+    } while (saisie== 0);
+     printf("\n bye, a la prochaine:\n");
 }

@@ -1,2 +1,3 @@
 ﻿  Phase1.c
-  Projet1C.vcxproj -> C:\Users\KAKOU\source\repos\Projet1C\x64\Debug\Projet1C.exe
+C:\Users\KAKOU\source\repos\Projet1C\Projet1C\Phase1.c(63,9): warning C4101: 'resultat': unreferenced local variable
+C:\Users\KAKOU\source\repos\Projet1C\Projet1C\Phase1.c(83,1): error C4700: uninitialized local variable 'saisie' used
